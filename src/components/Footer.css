@@ -1,0 +1,47 @@
+.upper>h4{
+    margin:0.5%;
+    color: black;
+}
+
+.container1{
+    border : 1px ;
+    text-align: center;
+    padding-top:20px;
+    border-radius: 10px;
+    height: 250px;
+    background-color: #c0f2f3;
+}
+
+.container2{
+    border : 1px ;
+    text-align: center;
+    padding-top:20px;
+    border-radius: 10px;
+    height:400px;
+}
+
+.container2>img{
+    height:400px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.container2>h4{
+    z-index: 0;
+    float:inline-start;
+}
+
+.container3{
+    border : 1px ;
+    padding-top:20px;
+    border-radius: 10px;
+    background-color: #c0f2f3;
+}
+
+.container3>h5{
+    text-align:end;
+}
+
+.total{
+    border :2px solid black;
+}

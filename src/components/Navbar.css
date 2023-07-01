@@ -1,0 +1,54 @@
+.header{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.image{
+    display:flex;
+}
+
+.image > img{
+    width : 45px;
+    height : 43px;
+    padding-top : 10px ;
+    padding-left: 40px;
+}
+
+p{
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+    color: #008080;
+}
+
+
+.items >ul{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    font-family: 'Poppins';
+    padding-left :18px;
+    padding-top:8px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #626262;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+button{
+    border-radius: 40px;
+    background : #006B6B;
+    color: white;
+    font-size: 18px;
+    width:auto;
+    height: 25px;
+    font-family: 'Poppins';
+    border:#006B6B;
+}
