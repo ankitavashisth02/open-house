@@ -4,8 +4,11 @@ import house from '../assets/house.jpg';
 
 
 const backgroundStyle = {
-   
-}
+   width :"100%" ,
+   height: "600px",
+   backgroundImage : `url(${house})`,
+   backgroundSize : "cover",
+};
 
 const Search = () =>{
     return(
@@ -16,20 +19,17 @@ const Search = () =>{
     );
 }
 
-const Image = ()=>{
-    return(
-        <React.Fragment>
-        <p className='one'>Let's find you a place of dream.</p>
-        <p className='two'>a base for good life.</p>
-        </React.Fragment>
-    );
-}
 
 const SearchBar = ()=>{
     return(
         <React.Fragment>
-        <div style={{backgroundImage:`url(${house})`}}>
-        <h2></h2>
+        <div style= {backgroundStyle} >
+
+        <h1 className='one'>Let's find you a<i> place of dream.</i> </h1>
+        <p className='two'>A BASE FOR GOOD LIFE.</p>
+
+        <Search />
+        
         </div>
         </React.Fragment>
     );

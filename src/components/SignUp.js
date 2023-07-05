@@ -4,6 +4,12 @@ import Home from "../assets/house.jpg";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
+
+const backgroundStyle = {
+  backgroundImage : `url(${Home})`,
+  backgroundSize : "cover",
+}
+
 const SignUp = () => {
   var [mynumber, setnumber] = useState("");
   const [passw, setPassw] = useState("");
@@ -23,12 +29,13 @@ const SignUp = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${Home})` }}>
+    <div className="main-box" style={backgroundStyle}>
     <div className="login-box">
       
         <h4>Welcome to Open House !</h4>
-        <h3>Sign up</h3>
+        <h3 style={{color:"#008080"}}>Sign up</h3>
         
+        <label>Name</label>
         <input
           type="text"
           className="first-name"
@@ -44,6 +51,7 @@ const SignUp = () => {
           onChange={(e) => setCompanyName(e.target.value)}
         />
 
+        <label>Company Name</label>
         <div className="company-name">
         <input
           type="text"
@@ -55,6 +63,7 @@ const SignUp = () => {
         </div>
 
 
+        <label>Phone Number</label>
         <div id="phone-input" style={{ display: !show ? "block" : "none" }}>
           <PhoneInput
             country={"ca"}
@@ -73,6 +82,7 @@ const SignUp = () => {
           <br></br>
 
 
+          <label>Password</label>
           <div className="password">
             <input
               type="password"
@@ -82,6 +92,7 @@ const SignUp = () => {
               onChange={(e) => setPassw(e.target.value)}
             />
 
+            <label>Confirm Password</label>
             <input
               type="password"
               className="confirm-password"

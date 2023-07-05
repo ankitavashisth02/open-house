@@ -1,62 +1,40 @@
 import React from "react";
 import './Footer.css';
-import logo from "../assets/house.jpg";
-
-// footer is divided in three parts- upper , middle, lower
-
-const Upper = () =>{
-    return(
-        <React.Fragment>
-        <div className="upper">
-        <h4>
-        Learn More..
-        <br/>
-        Features You're Looking For
-        </h4>
-
-        <div className="container1">
-        picture to be added.
-        </div>
-
-        </div>
-        </React.Fragment>
-    );
-}
-
-const Middle = () =>{
-    return(
-        <React.Fragment>
-        <div className="container2">
-        <img src={logo} alt="logo"/>
-        <h4>REGISTER YOUR<br/>FREE PROPERTY<br/>HERE..</h4>
-        </div>
-        </React.Fragment>
-    );
-}
-
-const Lower = () =>{
-    return(
-        <React.Fragment>
-        <div className="container3">
-        <h5>Get In Touch</h5>
-        </div>
-        </React.Fragment>
-    );
-}
+import FooterImg from "../assets/FooterTop.jpg";
+import Insta from "../assets/instagram.png";
+import Fb from "../assets/facebook.jpg";
 
 
-// to integrate the footer part
 
 const Footer = ()=>{
     return(
         <React.Fragment>
-        
-        <div className="total">
-        <Upper/>
-        <Middle/>
-        <Lower/>
+        <div className="total" >
+
+                <p>Register your<br/>property Free today. </p>
+                <img src={FooterImg} alt="logo"/>
+
+
+            <div className="container">
+
+            
+                <p>Get in touch: <img src={Insta} alt="logo"/><img src={Fb} alt="logo"/></p>
+
+
+                <h3>Popular cities</h3>
+                <ul>
+                    <li>Edmonton</li>
+                    <li>Toronto</li>
+                    <li>Calgary</li>
+                    <li>Vancouver</li>
+                    <li>Surrey</li>
+                </ul>
+                <hr/>
+                <h5 style={{clear:"both",paddingLeft:"30px",color:"#FFFFFF"}}>Copyright@2023 Openhouse All Rights Reserved.</h5>
+            </div>
+
+
         </div>
-        
         </React.Fragment>
     )
 }
