@@ -14,7 +14,7 @@ const Body = ()=>{
         <div className="main-body">
         <p style={{fontFamily:"Poppins", paddingLeft:"20px",fontSize:"18px",fontStyle:"normal"}}>DISCOVER</p>
         <h1 style={{fontFamily:"Poppins", paddingLeft:"20px"}}>Featured listings near you</h1>
-        <hr/>
+        <hr style={{border:"2px solid #008080",width:"150px",margin:"20px",float:"left"}}/>
 
 
         <div className="house-list">

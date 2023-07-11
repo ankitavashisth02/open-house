@@ -12,7 +12,7 @@ const backgroundStyle = {
 
 const SignUp = () => {
   var [mynumber, setnumber] = useState("");
-  const [passw, setPassw] = useState("");
+  const [password, setPassword] = useState("");
   const [show, setShow] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -26,7 +26,13 @@ const SignUp = () => {
       alert("Please enter a valid phone number");
       return;
     }
-  };
+    if(password != confirmPassword){
+      alert("passwords do not match");
+    }
+    // return(
+    //   console.log("happy happy")
+    // );
+  }
 
   return (
     <div className="main-box" style={backgroundStyle}>
@@ -48,7 +54,7 @@ const SignUp = () => {
           className="last-name"
           placeholder="lastName"
           value={lastName}
-          onChange={(e) => setCompanyName(e.target.value)}
+          onChange={(e) => setLastName(e.target.value)}
         />
 
         <label>Company Name</label>
@@ -58,7 +64,7 @@ const SignUp = () => {
           className="company-name"
           placeholder="Company Name"
           value={companyName}
-          onChange={(e) => setLastName(e.target.value)}
+          onChange={(e) => setCompanyName(e.target.value)}
         />
         </div>
 
@@ -88,8 +94,8 @@ const SignUp = () => {
               type="password"
               className="password"
               placeholder="Enter Password"
-              value={passw}
-              onChange={(e) => setPassw(e.target.value)}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
 
             <label>Confirm Password</label>
@@ -100,6 +106,7 @@ const SignUp = () => {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
+
           </div>
 
 

@@ -22,7 +22,7 @@ const Navbar = ()=>{
         <div className="items">
         <ul>
         <Link to="/" style={{textDecoration: 'none'}}><li>Home</li></Link>
-        <Link to="/about" style={{textDecoration: 'none'}}><li>About Us</li></Link>
+        <Link to="/signin" style={{textDecoration: 'none'}}><li>Sign In</li></Link>
         <Link to="/signup" style={{textDecoration: 'none'}}><li>SignUp</li></Link>
         <Link to="/listings" style={{textDecoration: 'none'}}><li><button className="add-listing">Add Listing</button></li></Link>
         </ul>

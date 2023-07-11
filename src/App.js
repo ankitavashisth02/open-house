@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 import { createBrowserRouter, Outlet , RouterProvider } from "react-router-dom";
-import About from "./components/About";
+import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import AddListing from "./components/AddListing";
 
@@ -27,8 +27,8 @@ const appRouter = createBrowserRouter([
                 element : <Body/>
             },
             {
-                path: "/about",
-                element : <About/>
+                path: "/signin",
+                element : <SignIn/>
             },
             {
                 path: "/signup",
