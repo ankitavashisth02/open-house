@@ -29,9 +29,7 @@ const SignUp = () => {
     if(password != confirmPassword){
       alert("passwords do not match");
     }
-    // return(
-    //   console.log("happy happy")
-    // );
+    
   }
 
   return (
