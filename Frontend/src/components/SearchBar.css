@@ -1,0 +1,74 @@
+.one{
+    position: absolute;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 650;
+    font-size: 45px;
+    color: whitesmoke ;
+    padding-left: 30%;
+    padding-top: 100px;
+}
+
+.two{
+    position: absolute;
+    font-style: normal;
+    font-size: 20px;
+    color: whitesmoke ;
+    padding-left: 42%;
+    padding-top: 180px;
+}
+
+.search-bar{
+    padding-left: 39%;
+    padding-top : 250px;
+}
+
+.text-bar{
+    width:300px;
+    height: 35px;
+    border-radius: 15px;
+    border:1px white;
+}
+
+.search-btn{
+    height: 32px;
+    border-radius: 15px;
+}
+
+.main-body{
+    padding-top: 0px;
+    background-color:	#F5F5F5;
+}
+
+.house-cards{
+    width: 300px;
+    background-color: white;
+    padding :10px;
+    margin:20px;
+}
+
+.house-list{
+    display: flex;
+    clear : both;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 300px;
+    height: 200px;
+}
+
+
+
+.container1{
+    border : 1px ;
+    text-align: center;
+    padding-top:20px;
+    border-radius: 10px;
+    height: 250px;
+    background-color: #c0f2f3;
+}
+
+.upper{
+    margin : 40px;
+}

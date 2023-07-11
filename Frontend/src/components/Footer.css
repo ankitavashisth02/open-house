@@ -1,0 +1,59 @@
+
+.total>img{
+    height:400px;
+    width:100%;
+    padding:0px;
+    background: rgba(0,0,0,0.7);
+    background-color: transparent;
+}
+
+.total > p{
+    position: absolute;
+    color :whitesmoke;
+    font-style: normal;
+    font-size: 40px;
+    font-family: Poppins;
+    padding: 30px;
+    font-weight: 550;
+}
+
+
+.container{
+    background-color: #008080;
+    width :100%;
+    height: 300px;
+}
+
+.container> p{
+    color : white;
+    text-align: right;
+    margin-right: auto;
+}
+
+.total {
+    background-color: #008080;
+}
+
+.container>h3{
+    padding-left :40px;
+    color:white;
+}
+
+.container>ul>li{
+    color : white;
+    padding-left :40px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+hr{
+    border: 1px solid white ;
+    padding-left : 50px;
+    width : 1200px;
+}
+
+.container>p>img{
+    padding : 5px;
+    width: 30px;
+    height: 30px;
+}
