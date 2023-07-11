@@ -20,7 +20,27 @@ const SignIn = ()=>{
     const[mynumber , setnumber] = useState("");
     const [show, setShow] = useState("");
     const [password , setPassword] = useState("");
-
+    const signIn = async () => {
+    try{
+    console.warn(mynumber,password)
+    let item ={mynumber,password};
+    let result =await  fetch("http://localhost:8081/api/v1/login",{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+            "Accept":"application/json"
+        },
+        body:JSON.stringify(item)
+    });
+    result = await result.json();
+    localStorage.setItem("user-info",JSON.stringify(result))
+    history.push("/add")
+}
+catch (error) {
+    console.log("error", error);
+    return false
+}
+}
 
     return(
         <React.Fragment>
